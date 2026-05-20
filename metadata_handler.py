@@ -282,7 +282,8 @@ def format_filename(title: str, author: str) -> str:
     author = (author or '').strip()
 
     if author and title:
-        name = f"{author} - {title}"
+        # name = f"{author} - {title}"
+        name = f"{title}"
     elif title:
         name = title
     elif author:
